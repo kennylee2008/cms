@@ -1,0 +1,1 @@
+定义一个通用的接口方法：getBean(String name)，以适应更多DAO对象的创建需求

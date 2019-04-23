@@ -1,0 +1,1 @@
+将数据库操作的逻辑封装到DAO(Data Access Object)中

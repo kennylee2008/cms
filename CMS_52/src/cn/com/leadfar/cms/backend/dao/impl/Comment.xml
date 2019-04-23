@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.com.leadfar.cms.backend.model.Comment">
+	<insert id="add" parameterType="Comment">
+		insert into t_comment 
+		(name,email,site,content,commentTime,articleId,memberId)
+		values
+		(#{name},#{email},#{site},#{content},#{commentTime},#{articleId},#{memberId})
+	</insert>
+	<update id="update" parameterType="Comment">
+		update t_comment set
+		name = #{name},
+		email = #{email},
+		site = #{site},
+		content = #{content},
+		commentTime = #{commentTime},
+		articleId = #{articleId},
+		memberId = #{memberId}
+		where id = #{id}
+	</update>
+	<delete id="del" parameterType="int">
+		delete from t_comment where id=#{id}
+	</delete>
+	<delete id="delCommentByArticleId" parameterType="int">
+		delete from t_comment where articleId=#{articleId}
+	</delete>
+	<select id="findById" parameterType="int" resultType="Comment">
+		select * from t_comment where id = #{id}
+	</select>
+	<select id="findByArticleId" parameterType="int" resultType="Comment">
+		select * from t_comment where articleId = #{articleid}
+	</select>
+	<select id="findPaginated" parameterType="map" resultType="Comment">
+		select * from t_comment limit #{offset},#{pagesize}
+	</select>
+	<select id="findPaginated-count" parameterType="map" resultType="int">
+		select count(*) from t_comment
+	</select>
+</mapper>

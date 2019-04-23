@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.com.leadfar.cms.backend.model.Channel">
+	<insert id="add" parameterType="Channel">
+		insert into t_channel (name,description) values (#{name},#{description})
+	</insert>
+	<update id="update" parameterType="Channel">
+		update t_channel set name=#{name},description=#{description}
+	</update>
+	<select id="findById" parameterType="int" resultType="Channel">
+		select * from t_channel where id = #{id}
+	</select>
+	<select id="findAll" resultType="Channel">
+		select * from t_channel
+	</select>
+	<select id="findPaginated" parameterType="map" resultType="Channel">
+		select * from t_channel limit #{offset},#{pagesize}
+	</select>
+	<select id="findPaginated-count" parameterType="map" resultType="int">
+		select count(*) from t_channel
+	</select>
+</mapper>

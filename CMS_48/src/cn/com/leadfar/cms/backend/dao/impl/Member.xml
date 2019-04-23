@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.com.leadfar.cms.backend.model.Member">
+	<insert id="add" parameterType="Member">
+		insert into t_member 
+		(name,email,nickname,password,qq,phone,address,description)
+		values
+		(#{name},#{email},#{nickname},#{password},#{qq},#{phone},#{address},#{description})
+	</insert>
+	<update id="update" parameterType="Member">
+		update t_member set
+		name = #{name},
+		email = #{email},
+		nickname = #{nickname},
+		qq = #{qq},
+		phone = #{phone},
+		address = #{address},
+		description = #{description}
+		where id = #{id}
+	</update>
+	<update id="updatePassword" parameterType="Member">
+		update t_member set
+		password = #{password}
+		where id = #{id}
+	</update>
+	<delete id="del" parameterType="int">
+		delete from t_member where id=#{id}
+	</delete>
+	<select id="findById" parameterType="int" resultType="Member">
+		select * from t_member where id = #{id}
+	</select>
+	<select id="findByNickname" parameterType="string" resultType="Member">
+		select * from t_member where nickname = #{nickname}
+	</select>
+	<select id="findPaginated" parameterType="map" resultType="Member">
+		select * from t_member limit #{offset},#{pagesize}
+	</select>
+	<select id="findPaginated-count" parameterType="map" resultType="int">
+		select count(*) from t_member
+	</select>
+</mapper>

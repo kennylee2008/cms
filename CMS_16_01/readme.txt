@@ -1,0 +1,2 @@
+处理pager-taglib中传输中文参数的时候的乱码问题
+增加一个EncodingFilter，以统一将所有请求（request）的编码设置为UTF-8

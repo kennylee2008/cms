@@ -1,0 +1,149 @@
+body {
+	text-align: center;
+	FONT: 12px "Verdana", "Arial", "sans-serif";
+	BACKGROUND-COLOR: #ffffff
+}
+#top {
+	width: 960px;
+	height:90px;
+	border: 0px;
+	margin: 3px auto;
+}
+.bg {
+	width:659px;
+	height:90px;
+	background:url(../images/javaee.png) top left no-repeat;
+	float:left
+}
+
+#nav {
+	width: 960px;
+	height:28px;
+	border: 0px;
+	margin: 3px auto;
+}
+
+#menu {
+	background:#145286;
+	height:28px;
+	line-height:28px;
+	border-top:1px solid #8BA1AF;
+	border-bottom:1px solid #4A6474;
+	float: left;
+	width: 100%;
+	text-align: left;
+}
+#menu A {
+	PADDING-RIGHT: 8px; PADDING-LEFT: 8px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #FFFFFF; LINE-HEIGHT: 28px; PADDING-TOP: 0px; TEXT-DECORATION: none
+}
+#menu A:hover {
+	BACKGROUND: #007799;
+	COLOR: #fff;
+	BORDER-BOTTOM: #7c9a57;
+	HEIGHT: 25px;
+	TEXT-DECORATION: none;
+	line-height: 28px;
+	float: left;
+}
+
+#mid{
+	width: 960px;
+	margin: 0px auto;
+	padding: 0px;
+}
+#left {
+	width: 660px;
+	border: 1px solid gray;
+	margin: 3px;
+	display:inline;
+	float: left;
+	overflow:hidden;
+}
+
+.index_topic {
+	margin:8px;
+	margin-left:0px;
+	margin-right:50px;
+	width:280px;
+	height:300px;
+	float:left;
+	overflow:hidden;
+	background:url(../images/line_gray.gif) repeat-x
+}
+
+.index_topic_list {
+	float:left;
+	width:100%;
+	text-align:left
+}
+
+.index_topic a {
+	FONT-SIZE: 9pt; COLOR: #000000; TEXT-DECORATION: none
+}
+
+.index_topic a:hover {
+	FONT-SIZE: 9pt; COLOR: #999999; TEXT-DECORATION: underline
+}
+
+.right {
+	width: 285px;
+	border: 1px solid gray;
+	margin: 0px;
+	margin-top: 3px;
+	display:inline;
+	float: right;
+}
+
+.right_topic_1 {
+	float:left;
+	width:95px;
+	height:27px;
+	background:url(../images/title_red.gif) no-repeat;
+	padding:7px 0px 0px 0px;
+	color:white
+}
+
+.right_topic_2 {
+	float:left;
+	width:190px;
+	height:27px;
+	background:url(../images/hz_bg_03.gif)
+}
+
+.right_topic_3 {
+	text-align:left;
+	clear:both;
+}
+
+.right_topic_3 a {
+	FONT-SIZE: 9pt; COLOR: blue; TEXT-DECORATION: none
+}
+
+.right_topic_3 a:hover {
+	FONT-SIZE: 9pt; COLOR: red; TEXT-DECORATION: underline
+}
+
+#bottom {
+	width: 960px;
+	height:90px;
+	margin: 3px auto;
+}
+#bottom a {
+	FONT-SIZE: 9pt; COLOR: blue; TEXT-DECORATION: none
+}
+
+#bottom a:hover {
+	FONT-SIZE: 9pt; COLOR: red; TEXT-DECORATION: underline
+}
+.logo {
+	float:left;
+	height:100%;
+}
+
+.h2title {
+	BORDER-TOP: #d9d9d9 1px dotted; FONT-WEIGHT: bold; FONT-SIZE: 16px; COLOR: #004a9c; PADDING-TOP: 4px; BORDER-BOTTOM: #d9d9d9 1px dotted; HEIGHT: 16px
+}
+
+.atime {
+	FONT-SIZE: 12px; COLOR: #808080; TEXT-ALIGN: right
+}

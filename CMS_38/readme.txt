@@ -1,0 +1,1 @@
+利用ThreadLocal设计模式传递offset和pagesize参数

@@ -1,0 +1,45 @@
+body {
+	text-align: center;
+}
+#top {
+	width: 960px;
+	height:90px;
+	border: 1px solid blue;
+	margin: 3px auto;
+}
+
+#nav {
+	width: 960px;
+	height:28px;
+	border: 1px solid blue;
+	margin: 3px auto;
+}
+#mid{
+	width: 960px;
+	margin: 0px auto;
+	padding: 0px;
+}
+#left {
+	width: 660px;
+	height:800px;
+	border: 1px solid blue;
+	margin: 3px;
+	display:inline;
+	float: left;
+}
+
+.right {
+	width: 285px;
+	height:120px;
+	border: 1px solid blue;
+	margin: 0px;
+	margin-top: 3px;
+	display:inline;
+	float: left;
+}
+#bottom {
+	width: 960px;
+	height:90px;
+	border: 1px solid blue;
+	margin: 3px auto;
+}

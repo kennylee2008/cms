@@ -1,0 +1,2 @@
+在几乎所有的后台管理有关的JSP和Servlet中，判断HTTP SESSION里面是否有LOGIN_ADMIN这个Attribute，
+如果没有这个atrribute，则转向登录界面，否则就不转向

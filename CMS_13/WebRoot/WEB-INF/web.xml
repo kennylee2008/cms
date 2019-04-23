@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <servlet>
+    <servlet-name>CheckcodeServlet</servlet-name>
+    <servlet-class>cn.com.leadfar.cms.backend.view.CheckcodeServlet</servlet-class>
+    <init-param>
+    	<param-name>width</param-name>
+    	<param-value>44</param-value>
+    </init-param>
+    <init-param>
+    	<param-name>height</param-name>
+    	<param-value>20</param-value>
+    </init-param>
+    <init-param>
+    	<param-name>number</param-name>
+    	<param-value>4</param-value>
+    </init-param>
+    <init-param>
+    	<param-name>codes</param-name>
+    	<param-value>ABCDEFGHIJKLMNOPQRSTUVWXYZ</param-value>
+    </init-param>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>cn.com.leadfar.cms.backend.view.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>cn.com.leadfar.cms.backend.view.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SearchArticlesServlet</servlet-name>
+    <servlet-class>cn.com.leadfar.cms.backend.view.SearchArticlesServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddArticleServlet</servlet-name>
+    <servlet-class>cn.com.leadfar.cms.backend.view.AddArticleServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DelArticlesServlet</servlet-name>
+    <servlet-class>cn.com.leadfar.cms.backend.view.DelArticlesServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>OpenUpdateArticleServlet</servlet-name>
+    <servlet-class>cn.com.leadfar.cms.backend.view.OpenUpdateArticleServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdateArticleServlet</servlet-name>
+    <servlet-class>cn.com.leadfar.cms.backend.view.UpdateArticleServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddChannelServlet</servlet-name>
+    <servlet-class>cn.com.leadfar.cms.backend.view.AddChannelServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DelChannelsServlet</servlet-name>
+    <servlet-class>cn.com.leadfar.cms.backend.view.DelChannelsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>OpenUpdateChannelServlet</servlet-name>
+    <servlet-class>cn.com.leadfar.cms.backend.view.OpenUpdateChannelServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SearchChannelsServlet</servlet-name>
+    <servlet-class>cn.com.leadfar.cms.backend.view.SearchChannelsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdateChannelServlet</servlet-name>
+    <servlet-class>cn.com.leadfar.cms.backend.view.UpdateChannelServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>CheckcodeServlet</servlet-name>
+    <url-pattern>/backend/images/checkcode.jpg</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/backend/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/backend/LogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SearchArticlesServlet</servlet-name>
+    <url-pattern>/backend/SearchArticlesServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddArticleServlet</servlet-name>
+    <url-pattern>/backend/AddArticleServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DelArticlesServlet</servlet-name>
+    <url-pattern>/backend/DelArticlesServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OpenUpdateArticleServlet</servlet-name>
+    <url-pattern>/backend/OpenUpdateArticleServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateArticleServlet</servlet-name>
+    <url-pattern>/backend/UpdateArticleServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddChannelServlet</servlet-name>
+    <url-pattern>/backend/AddChannelServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DelChannelsServlet</servlet-name>
+    <url-pattern>/backend/DelChannelsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OpenUpdateChannelServlet</servlet-name>
+    <url-pattern>/backend/OpenUpdateChannelServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SearchChannelsServlet</servlet-name>
+    <url-pattern>/backend/SearchChannelsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateChannelServlet</servlet-name>
+    <url-pattern>/backend/UpdateChannelServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <filter>
+  	<filter-name>loginFilter</filter-name>
+  	<filter-class>cn.com.leadfar.cms.backend.view.LoginFilter</filter-class>
+  	<init-param>
+  		<param-name>filterPattern</param-name>
+  		<param-value>.*Servlet|.*\.jsp</param-value>
+  	</init-param>
+  </filter>
+  
+  <filter-mapping>
+  	<filter-name>loginFilter</filter-name>
+  	<url-pattern>/backend/*</url-pattern>
+  </filter-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

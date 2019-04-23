@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<typeAlias type="cn.com.leadfar.cms.backend.model.Admin" alias="Admin"/>
+		<typeAlias type="cn.com.leadfar.cms.backend.model.Article" alias="Article"/>
+		<typeAlias type="cn.com.leadfar.cms.backend.model.Channel" alias="Channel"/>
+		<typeAlias type="cn.com.leadfar.cms.backend.model.Member" alias="Member"/>
+		<typeAlias type="cn.com.leadfar.cms.backend.model.Comment" alias="Comment"/>
+	</typeAliases>
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<property name="driver" value="com.mysql.jdbc.Driver" />
+				<property name="url" value="jdbc:mysql://localhost/cms" />
+				<property name="username" value="root" />
+				<property name="password" value="mysql" />
+			</dataSource>
+		</environment> 
+	</environments>
+	<mappers>
+		<mapper resource="cn/com/leadfar/cms/backend/dao/impl/Admin.xml" />
+		<mapper resource="cn/com/leadfar/cms/backend/dao/impl/Article.xml" />
+		<mapper resource="cn/com/leadfar/cms/backend/dao/impl/Channel.xml" />
+		<mapper resource="cn/com/leadfar/cms/backend/dao/impl/Member.xml" />
+		<mapper resource="cn/com/leadfar/cms/backend/dao/impl/Comment.xml" />
+	</mappers>
+</configuration>

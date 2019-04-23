@@ -1,0 +1,1 @@
+较为完整的实现ArticleDao和ChannelDao
